@@ -1,0 +1,68 @@
+name: ayusethu_farmer
+description: "AyuSethu Farmer Portal – Voice-first plant supply chain tracking app"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+
+  # Networking
+  dio: ^5.7.0
+
+  # Navigation
+  go_router: ^14.8.1
+
+  # Secure Storage (JWT persistence)
+  flutter_secure_storage: ^9.2.4
+
+  # Charts
+  fl_chart: ^0.70.2
+
+  # Audio Recording
+  record: ^6.2.0
+
+  # Audio Playback
+  audioplayers: ^6.1.0
+
+  # Typography
+  google_fonts: ^6.2.1
+
+  # Environment Variables
+  flutter_dotenv: ^5.2.1
+
+  # Animations
+  lottie: ^3.3.1
+
+  # Icons
+  cupertino_icons: ^1.0.8
+  path_provider: ^2.1.5
+  geolocator: ^14.0.2
+  image_picker: ^1.2.1
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.3
+  
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: false
+  image_path: "image.png"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env
+    - image.png
